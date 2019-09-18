@@ -4,6 +4,15 @@
 // that manipulates variables defined in the outer scope.
 // The outer scope can be a parent function, or the top level of the script.
 
+function city(cityName){
+  console.log(cityName);
+  function cityZip(ZipName){
+    console.log(`Your city is: ${cityName} and the zip is: ${ZipName}`)
+  }
+  cityZip(12345);
+}
+city('Madison')
+
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
 
